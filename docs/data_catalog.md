@@ -19,9 +19,13 @@ The gold layer is the business-level data representation which is structured to 
 |create_date| DATE | The date the customer was recorded into the system (e.g., '2026-01-14').|
 
 
+
+
+
 ## **2. gold.dim_products**
 - **purpose:** Stores details about the products and their attributes
 - **Columns:**
+
 | Column Name | Data Type | Description |
 | ----- | ----- | ----- |
 |product_key| INT | Surrogate key uniquely identifying each product record in the product dimension table.|
@@ -37,9 +41,13 @@ The gold layer is the business-level data representation which is structured to 
 |start_date| DATE | The date when the product became available for sale stored in YYYY-MM-DD format (e.g., '2003-07-01').|
 
 
+
+
+
 ## **3. gold.fact_sales**
 - **purpose:** Stores transactional level sales data for analytical purposes
 - **Columns:**
+
 | Column Name | Data Type | Description |
 | ----- | ----- | ----- |
 |order_number| NVARCHAR(50) | A unique alphanumeric identifier for each sales order (e.g., 'SO43698').|
